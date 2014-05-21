@@ -3,7 +3,7 @@ Contributors: sumobi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: easy digital downloads, digital downloads, e-downloads, edd, sumobi, purchase, e-commerce
 Requires at least: 3.3
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,13 @@ Features:
 1. Configure the options from Downloads &rarr; Settings &rarr; Extensions
 
 OR you can just install it with WordPress by going to Plugins >> Add New >> and type this plugin's name
+
+== Screenshots ==
+
+1. Force customers to share for a specified percentage or flat rate
+1. As soon as the customers have shared, they are rewarded with a discount code. This can be a discount code you've already made, or choose to create one on the spot
+1. The one-time use, unqique discount code is created just for the customer
+1. A payment note is recorded showing the discount code that was stored against the purchase
 
 == Changelog ==
 
