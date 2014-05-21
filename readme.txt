@@ -2,7 +2,7 @@
 Contributors: sumobi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: easy digital downloads, digital downloads, e-downloads, edd, sumobi, purchase, e-commerce
-Requires at least: 3.3
+Requires at least: 3.8
 Tested up to: 3.9.1
 Stable tag: 1.0
 License: GPLv2 or later
@@ -16,11 +16,11 @@ This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugin
 
 EDD Purchase Rewards allows a site owner to reward customers who purchase with a discount code. This will not only lead to repeat sales by the customer, but build customer loyalty. 
 
-The discount code can either be a preselected discount code that you create, or you can choose to automatically generate a unique, on-time use discount code (percentage or flat rate).
+The discount code can either be a preselected discount code that you create, or you can choose to automatically generate a unique, one-time use discount code (percentage or flat rate).
 
 A minimum purchase amount can be set, and you can also force the customer to share to at least 1 social network before the discount is given to them. The discount code is shown on the purchase confirmation page but can be optionally emailed to the customer.
 
-Features:
+**Features**:
 
 1. Offer a discount code to your customer for purchasing
 1. Force the customer to share to at least 1 social network before receiving their reward
@@ -37,6 +37,28 @@ Features:
 1. Customize the reward sharing message
 1. Customize the reward sharing thanks title
 1. Customize the reward sharing thanks message
+
+**Want more free EDD plugins?**
+
+To fund ongoing development of more [free EDD plugins](http://profiles.wordpress.org/sumobi#content-plugins), I would greatly appreciate any of the below:
+1. [Buy one of my commercial EDD plugins](https://easydigitaldownloads.com/blog/author/andrewmunro/?ref=166 "Buy one of my commercial EDD plugins")
+1. [Use my referral code when you purchase your next EDD plugin](https://easydigitaldownloads.com/extensions/?ref=166 "Use my referral code when you purchase your next EDD plugin")
+1. [Donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L "Donate via PayPal")
+
+**Plugins for Easy Digital Downloads**
+[https://easydigitaldownloads.com/extensions/](https://easydigitaldownloads.com/extensions/?ref=166 "Plugins for Easy Digital Downloads")
+
+**Tips for Easy Digital Downloads**
+[http://sumobi.com/blog](http://sumobi.com/blog "Tips for Easy Digital Downloads")
+
+**Stay up to date**
+
+*Follow me on Twitter* 
+[http://twitter.com/sumobi_](http://twitter.com/sumobi_ "Twitter")
+
+*Become a fan on Facebook* 
+
+[http://www.facebook.com/sumobicom](http://www.facebook.com/sumobicom "Facebook")
 
 == Installation ==
 
