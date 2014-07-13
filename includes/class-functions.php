@@ -10,19 +10,26 @@ class EDD_Purchase_Rewards_Functions {
 	 *
 	 * @return  boolean true if can reward, false otherwise
 	 */
-	public function can_reward() {
-		// return if no purchase session. Falls back to standard sharing mode
-		if ( ! edd_get_purchase_session() )
-			return false;
+	public function can_reward( $payment_id = false ) {
+		// get purchase amount
+		if ( ! edd_get_purchase_session() ) {
+			if ( $payment_id ) {
+				// No purchase session available, try to determine the
+				// purchase amount by the given payment ID parameter.
+				$purchase_amount = edd_get_payment_amount( $payment_id );
+			} else {
+				// return if no purchase session and no payment ID. Falls back to standard sharing mode
+				return false;
+			}
+		} else {
+			$purchase_amount = edd_get_payment_amount( $this->get_payment_id() );
+		}
 
 		// enable for free purchases
 		$enable_free_purchases 	= edd_get_option( 'edd_purchase_rewards_enable_free_purchases', false );
 
-		// get purchase amount
-		$purchase_amount 			= edd_get_payment_amount( $this->get_payment_id() );
-
 		// minimum purchase amount
-		$minimum_purchase_amount 	= edd_get_option( 'edd_purchase_rewards_minimum_purchase_amount' );
+		$minimum_purchase_amount = edd_get_option( 'edd_purchase_rewards_minimum_purchase_amount' );
 
 		// one of two discount options must be enabled
 		if ( edd_get_option( 'edd_purchase_rewards_discount_code' ) || edd_get_option( 'edd_purchase_rewards_generate_discount' ) ) {
@@ -104,13 +111,13 @@ class EDD_Purchase_Rewards_Functions {
 	 */
 	public function filter_template_tags( $text = '', $discount_code = null, $payment_id = '' ) {
 							
-		$code 				= edd_get_option( 'edd_purchase_rewards_discount_code' );
+		$code               = edd_get_option( 'edd_purchase_rewards_discount_code' );
 
 		$generate_discount 	= edd_get_option( 'edd_purchase_rewards_generate_discount' );
-		$type 				= edd_get_option( 'edd_purchase_rewards_discount_type' );
+		$type               = edd_get_option( 'edd_purchase_rewards_discount_type' );
 		
 		// this needs to pull the information from the database if discount code has been generated
-		$amount 			= edd_get_option( 'edd_purchase_rewards_discount_amount' );
+		$amount             = edd_get_option( 'edd_purchase_rewards_discount_amount' );
 
 		// payment ID
 		$payment_id = ! empty( $payment_id ) ? $payment_id : $this->get_payment_id();
