@@ -89,6 +89,8 @@ OR you can just install it with WordPress by going to Plugins >> Add New >> and 
 = 1.1 =
 Now sends the discount with a beautiful email, new filters for developers, minor bug fix and various tweaks 
 
+== Changelog ==
+
 = 1.1 =
 
 New: Passed more variables to the edd_purchase_rewards_show_reward filter, making it easier to customize what is shown on the purchase confirmation page.
@@ -110,8 +112,6 @@ Tweak: Changed instances of edd_get_option( 'success_page' ) to the edd_is_succe
 Tweak: Various formatting and code cleanup enhancements.
 
 Tweak: Removed {site_url} from default email since EDD's new emails include this by default in the email footer
-
-== Changelog ==
 
 = 1.0.6 =
 Fix: Plugin deactivating when EDD was updated.
